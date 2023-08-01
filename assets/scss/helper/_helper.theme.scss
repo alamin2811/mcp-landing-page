@@ -1,0 +1,41 @@
+.section-title{
+    &.center{
+        text-align: center;
+    }
+}
+
+@-webkit-keyframes cliprotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cliprotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}

@@ -1,0 +1,204 @@
+
+.mcp-testmonial-content{
+    max-width: 780px;
+    margin: auto;
+    text-align: center;
+    .testmonial-title{
+        @include textStyle(18px, 700, 30px);
+        color: color(iconColor);
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 52px;
+    }
+    .testmonial-quote-text{
+        @include textStyle(25px, 500, 45px);
+        color: color(title);
+        margin-bottom: 25px;
+    }
+    .clint-content{
+        .clint-img{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin: auto;
+            margin-bottom: 17px;
+            img{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+        }
+        .clint-info{
+            margin-bottom: 29px;
+            span{
+                @include textStyle(18px, 700, 30px);
+                color: color(title);
+            }
+        }
+    }
+    
+    .slick-dots{
+        position: relative;
+        bottom: 0px;
+        max-width: 107px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 6px;
+        li{
+            height: 8px;
+            width: 8px;
+            padding: 0px;
+            button{
+                background: rgba(0, 0, 0, 0.2);
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                opacity: 1;
+                color: transparent;
+                &:before{
+                    display: none;
+                }
+            }
+            &.slick-active{
+                width: 15px;
+                button{
+                    width: 15px;
+                    border-radius: 20px;
+                    background: color(title);
+                }
+            }
+        }
+    }
+}
+.testmonial-quote-icon{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #35B7F3;
+    margin: auto;
+    margin-bottom: 47px;
+    
+    .circle-progress {
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+    }
+
+    .halfclip {
+        width: 50%;
+        height: 100%;
+        right: 0px;
+        position: absolute;
+        overflow: hidden;
+        transform-origin: left center;
+    }
+
+    .halfcircle {
+        box-sizing: border-box;
+        height: 100%;
+        right: 0px;
+        position: absolute;
+        border: solid 3px transparent;
+        border-radius: 50%;
+    }
+
+    .clipped {
+        width: 200%;
+    }
+
+    .fixed {
+        width: 100%;
+        transform: rotate(135deg);
+    }
+}
+
+.mcp-testmonial-slider {
+    .slick-current {
+        .halfclip {
+            animation: cliprotate 3.5s steps(2) infinite;
+            -webkit-animation: cliprotate 3.5s steps(2) infinite;
+        }
+
+        .halfcircle {
+            border-top-color: rgba(0, 0, 0, 0.3);
+            border-left-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .clipped {
+            animation: rotate 1.75s linear infinite;
+            -webkit-animation: rotate 1.75s linear infinite;
+        }
+
+        .fixed {
+            animation: showfixed 3.5s steps(2) infinite;
+            -webkit-animation: showfixed 3.5s linear infinite;
+        }
+    }
+}
+.mcp-testmonial-badge{
+    max-width: 620px;
+    width: 100%;
+    margin: auto;
+    padding-top: 80px;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1%;
+        padding: 0px;
+        list-style: none;
+        li{
+            width: 19%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .mcp-testmonial-content {
+        .testmonial-title{
+            margin-bottom: 30px;
+        }
+        .testmonial-quote-text{
+            font-size: 20px;
+            line-height: 180%;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .mcp-testmonial-content {
+        .testmonial-quote-text{
+            font-size: 18px;
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .mcp-testmonial-content {
+        .testmonial-title{
+            margin-bottom: 20px;
+        }
+        .testmonial-quote-text{
+            font-size: 16px;
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    .mcp-testmonial-content {
+        .testmonial-quote-text{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.header-section{
+    background: color(whiteColor);
+    padding: 20px 0px;
+    &.sticky{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: #ffffff99;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+    }
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    max-width: 211px;
+    width: 100%;
+}
+.menu-list{
+    margin-left: 23px;
+    width: 460px;
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        li{
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.header-right{
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        gap: 25px;
+        li{
+            a{
+                &.register{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 187.5%;
+                }
+                &.login{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    height: 40px;
+                    color: color(whiteColor);
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 700;
+                    border-radius: 10px;
+                    background: color(primary);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/*-- responsive --*/
+@media only screen and (max-width: 1200px){
+    .logo{
+        max-width: 160px;
+    }
+    .menu-list{
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .menu-list{
+        display: none;
+    }
+    .header-right{
+        display: none;
+    }
+}

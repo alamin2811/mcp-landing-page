@@ -1,0 +1,73 @@
+.joomla-card{
+    border-radius: 20px;
+    background: #2B216A;
+    padding: 112px 100px;
+}
+
+.joomla-text{
+    h2{
+        color: #FFF;
+        margin-bottom: 30px;
+    }
+    p{
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 50px;
+        color: color(whiteColor);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 10px;
+        background: color(primary);
+    }
+}
+
+.joomla-img{
+    border-radius: 20px;
+    max-width: 300px;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 991px){
+    .joomla-card{
+        padding: 60px 50px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .joomla-text {
+        text-align: center;
+        margin-bottom: 20px;
+        p{
+            margin-bottom: 30px;
+        }
+        button{
+            margin: auto;
+        }
+    }
+    .joomla-img{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .joomla-card{
+        padding: 50px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    .joomla-text {
+        button{
+            width: 180px;
+        }
+    }
+}

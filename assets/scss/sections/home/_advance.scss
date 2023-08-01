@@ -1,0 +1,108 @@
+
+.advance-img{
+    padding-right: 40px;
+}
+.advance-img-container{
+    position: relative;
+    padding-right: 70px;
+    .advance-small-img{
+        &1{
+            position: absolute;
+            top: 104px;
+            right: -20px;
+            width: 42%;
+        }
+        &2{
+            position: absolute;
+            bottom: -80px;
+            right: -20px; 
+            width: 60%;
+        }
+    }
+}
+
+.advance-text{
+    ul{
+        list-style: url(../images/icons/check.svg);
+        padding-left: 22px;
+        li{
+            margin-bottom: 16px;
+            a{
+                color: #2B216A;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.advance-section-gray{
+    border-radius: 100px 100px 0px 0px;
+    background: linear-gradient(180deg, #F6F6F6 0%, rgba(246, 246, 246, 0.00) 100%);
+}
+
+
+.advance-card{
+    border-radius: 20px;
+    background: #F6F6F6;
+    padding: 35px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100%;
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px; 
+        margin-left: 17px;
+        margin-bottom: 0px;
+        a{
+            color: #35B7F3;
+            margin-left: 5px;
+            img{
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1280px){
+    .advance-card{
+        padding: 20px;
+        p{
+            font-size: 16px;
+            line-height: 180%;
+        }
+    }
+}
+@media only screen and (max-width: 991px){
+    .advance-img{
+        padding-right: 0px;
+    }
+    .advance-img-container{
+        .advance-small-img{
+            &1{
+                top: 10%;
+                right: 0px;
+            }
+            &2{
+                bottom: -45px;
+                right: 0px;
+            }
+        }
+    }
+    .advance-section-gray{
+        border-radius: 60px 60px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .advance-img{
+        margin-top: 30px;
+    }
+    .advance-section-gray{
+        border-radius: 40px 40px 0px 0px;
+    }
+}

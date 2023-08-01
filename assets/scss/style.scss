@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------------
+Theme Name: MCP
+Theme URL: #
+Author: uigigs
+Author URL: https://themeforest.net/user/uigigs/portfolio
+version: 1.0.0
+------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------
+CSS table of content
+
+01. Settings style
+02. Base style
+03. Component Style
+04. Header style
+05. Banner Style
+06. home Style
+07. footer Style
+
+------------------------------------------------------------------------------------*/
+
+/*--------------------------------
+01. Settings style
+--------------------------------*/ 
+@import './settings/variables';
+
+/*--------------------------------
+02. Base style
+--------------------------------*/
+@import './helper/reset.all'; 
+@import './helper/helper.theme';
+@import './utilities/uig.spacing';
+
+/*--------------------------------
+03. Component Style
+--------------------------------*/
+@import './components/buttons';
+@import './components/section-title';
+/*--------------------------------
+04. Header style
+--------------------------------*/
+@import './sections/header/header';
+@import './sections/header/mobile-menu';
+
+/*--------------------------------
+05. Banner Style
+--------------------------------*/
+@import './sections/hero/hero';
+
+/*--------------------------------
+06. home Style
+--------------------------------*/
+@import './sections/home/features';
+@import './sections/home/advance';
+@import './sections/home/pricing';
+@import './sections/home/testmonial';
+@import './sections/home/joomla';
+
+
+/*--------------------------------
+07. footer Style
+--------------------------------*/
+@import './sections/footer/footer';
+
+
