@@ -28867,12 +28867,14 @@ CSS table of content
   top: 104px;
   right: -20px;
   width: 42%;
+  animation: jumpingDown 4.5s infinite;
 }
 .advance-img-container .advance-small-img2 {
   position: absolute;
   bottom: -80px;
   right: -20px;
   width: 60%;
+  animation: jumpingUp 4.5s infinite;
 }
 
 .advance-text ul {
