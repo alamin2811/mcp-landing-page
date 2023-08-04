@@ -422,6 +422,28 @@ img {
     transform: rotate(135deg);
   }
 }
+@keyframes jumpingDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes jumpingUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /*------------------------------------------------------------------------------------
 Theme Name: MCP
 Theme URL: #
@@ -28519,6 +28541,7 @@ CSS table of content
 .hero-text h1 {
   color: #FFF;
   font-size: 60px;
+  font-weight: 600;
   line-height: 125%;
   margin-bottom: 57px;
   position: relative;
@@ -28540,7 +28563,7 @@ CSS table of content
   line-height: 187%;
   margin-bottom: 50px;
 }
-.hero-text button {
+.hero-text .banner-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28552,6 +28575,57 @@ CSS table of content
   font-weight: 700;
   border-radius: 10px;
   background: #35B7F3;
+}
+
+.hero-img {
+  position: relative;
+}
+.hero-img .check {
+  position: absolute;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  top: -3%;
+  left: 40%;
+  width: 8%;
+  animation: jumpingUp 5s infinite;
+}
+.hero-img .oval {
+  position: absolute;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  top: -2%;
+  right: 28%;
+  width: 24%;
+}
+.hero-img .chart {
+  position: absolute;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  right: -16px;
+  bottom: 5%;
+  width: 30%;
+  animation: jumpingDown 5s infinite;
+}
+.hero-img .shild {
+  position: absolute;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  bottom: 40%;
+  left: -20px;
+  width: 16%;
+  animation: jumpingDown 4.5s infinite;
+}
+.hero-img .woo {
+  position: absolute;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  right: 24%;
+  top: 9%;
+  width: 16%;
+  animation: jumpingUp 5s infinite;
+}
+.hero-img .cart {
+  position: absolute;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  bottom: 4%;
+  left: 40%;
+  width: 14%;
+  animation: jumpingDown 4.5s infinite;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -28613,6 +28687,62 @@ CSS table of content
 }
 .advance-img {
   padding-right: 40px;
+  position: relative;
+}
+.advance-img .women {
+  position: absolute;
+  right: 12%;
+  bottom: 15%;
+  width: 45%;
+}
+.advance-img .icon1 {
+  position: absolute;
+  top: 13%;
+  left: 0%;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  width: 13%;
+  animation: jumpingDown 4.5s infinite;
+}
+.advance-img .icon2 {
+  position: absolute;
+  bottom: 25%;
+  left: 0px;
+  width: 9%;
+  animation: jumpingUp 4.5s infinite;
+}
+.advance-img .icon3 {
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+  width: 13%;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
+  animation: jumpingDown 4.5s infinite;
+}
+
+.advance-img-with-hand {
+  overflow: hidden;
+  max-width: 100%;
+  padding-right: 0px;
+  border-radius: 20px;
+  max-width: 540px;
+}
+.advance-img-with-hand .hand1 {
+  position: absolute;
+  top: -70px;
+  left: -40px;
+  width: 40%;
+}
+.advance-img-with-hand .hand2 {
+  position: absolute;
+  top: -70px;
+  right: -40px;
+  width: 40%;
+}
+.advance-img-with-hand .hand3 {
+  position: absolute;
+  bottom: -20px;
+  left: 30%;
+  width: 40%;
 }
 
 .advance-img-container {

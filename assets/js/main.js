@@ -35,5 +35,90 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
         });
     }
 
-    new WOW().init();
+    /*-- hand1 start --*/
+    var hand1 = $(".hand1");
+    if (hand1.length) {
+        $(window).on("scroll", function () {
+            var hand1 = $(".hand1");
+            var y = window.scrollY;
+            var x;
+            x = hand1.offset().top;
+            x = x - 200;
+
+            let animationValue = 0;
+            animationValue = (y - x) / 3;
+
+            let animationStop = 100;
+
+            if (animationValue < 0) {
+                animationValue = 0;
+            }
+
+            if (animationValue > animationStop) {
+                animationValue = animationStop;
+            }
+
+            hand1.css("transform", `translateY(${animationValue}px)`);
+        });
+    }
+    /*-- hand1 end --*/
+
+    /*-- hand2 start --*/
+    var hand2 = $(".hand2");
+    if (hand2.length) {
+        $(window).on("scroll", function () {
+            var hand2 = $(".hand2");
+            var y = window.scrollY;
+            var x;
+            x = hand2.offset().top;
+            x = x - 200;
+
+            let animationValue = 0;
+            animationValue = (y - x) / 3;
+
+            let animationStop = 100;
+
+            if (animationValue < 0) {
+                animationValue = 0;
+            }
+
+            if (animationValue > animationStop) {
+                animationValue = animationStop;
+            }
+
+            hand2.css("transform", `translateY(${animationValue}px)`);
+        });
+    }
+    /*-- hand2 end --*/
+
+    /*-- hand3 start --*/
+    var hand3 = $(".hand3");
+    if (hand3.length) {
+        $(window).on("scroll", function () {
+            var hand3 = $(".hand3");
+            var y = window.scrollY;
+            var x;
+            x = hand3.offset().top;
+            x = x - 200;
+
+            let animationValue = 0;
+            animationValue = (-1 * (y - x)) / 3;
+
+            let animationStop = 100;
+
+            if (animationValue < 0) {
+                animationValue = 0;
+            }
+
+            if (animationValue > animationStop) {
+                animationValue = animationStop;
+            }
+
+            hand3.css("transform", `translateY(${animationValue}px)`);
+        });
+    }
+    /*-- hand3 end --*/
+
+
+    // new WOW().init();
 })(jQuery);
