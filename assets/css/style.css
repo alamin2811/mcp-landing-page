@@ -28464,9 +28464,6 @@ CSS table of content
   .logo {
     max-width: 160px;
   }
-  .menu-list {
-    margin-left: 0px;
-  }
 }
 @media only screen and (max-width: 991px) {
   .menu-list {
@@ -28569,6 +28566,22 @@ CSS table of content
 }
 .language-dropdown .list-item.select {
   display: none;
+}
+
+.mobile-language-dropdown {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile-language-dropdown {
+    display: block;
+  }
+}
+.for-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .mobile-menu {

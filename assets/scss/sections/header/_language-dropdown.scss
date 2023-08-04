@@ -96,4 +96,14 @@
           }
       }
   }
+
+  .mobile-language-dropdown{
+    display: none;
+}
   
+
+  @media only screen and (max-width: 991px){
+    .mobile-language-dropdown{
+        display: block;
+    }
+  }
