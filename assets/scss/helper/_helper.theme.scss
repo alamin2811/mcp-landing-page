@@ -4,6 +4,8 @@
     }
 }
 
+/*-- cliprotate --*/
+
 @-webkit-keyframes cliprotate {
     0% {
         transform: rotate(0deg);
@@ -22,6 +24,7 @@
     }
 }
 
+/*-- rotate --*/
 @-webkit-keyframes rotate {
     0% {
         transform: rotate(-45deg);
@@ -40,7 +43,7 @@
     }
 }
 
-
+/*-- jumpingDown --*/
 @keyframes jumpingDown {
     0% {
       transform: translateY(0);
@@ -61,5 +64,20 @@
     }
     100% {
       transform: translateY(0);
+    }
+  }
+
+  /*-- menuAnimetion --*/
+  @keyframes menuAnimetion {
+    from {
+      transform-origin: 50% -30px;
+      opacity: 0;
+      display: none;
+      transform: rotateX(-15deg) translateZ(0px);
+    }
+    to {
+      display: block;
+      transform: none;
+      opacity: 1;
     }
   }

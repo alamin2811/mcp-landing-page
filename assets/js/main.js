@@ -15,11 +15,6 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
     });
     /*-- sticky header scripts end --*/
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
     var mcpTestmonialContent = $(".mcp-testmonial-slider");
     if (mcpTestmonialContent.length) {
         $(".mcp-testmonial-slider").slick({
@@ -118,7 +113,33 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
         });
     }
     /*-- hand3 end --*/
+    
+    /*-- women start --*/
+    var women = $(".women");
+    if (women.length) {
+        $(window).on("scroll", function () {
+            var women = $(".women");
+            var y = window.scrollY;
+            var x;
+            x = women.offset().top;
+            x = x - 200;
 
+            let animationValue = 0;
+            animationValue = (-1 * (y - x)) / 5;
 
-    // new WOW().init();
+            let animationStop = 100;
+
+            if (animationValue < 0) {
+                animationValue = 0;
+            }
+
+            if (animationValue > animationStop) {
+                animationValue = animationStop;
+            }
+
+            women.css("transform", `translateX(${animationValue}px)`);
+        });
+    }
+    /*-- women end --*/
+
 })(jQuery);
