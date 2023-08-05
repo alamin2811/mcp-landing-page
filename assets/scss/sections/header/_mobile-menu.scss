@@ -1,9 +1,3 @@
-.for-mobile{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
-}
 .mobile-menu{
     display: none;
     .navbar-toggler{
@@ -69,5 +63,11 @@
 @media only screen and (max-width: 991px){
     .mobile-menu{
         display: block;
+    }
+    .for-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
     }
 }

@@ -80,7 +80,14 @@
     }
 }
 
-
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.for-mobile{
+    display: none;
+}
 
 
 
@@ -93,6 +100,12 @@
 @media only screen and (max-width: 991px){
     .menu-list{
         display: none;
+    }
+    .header-right{
+        display: none;
+    }
+    .for-mobile{
+        display: block;
     }
     .header-right{
         display: none;
