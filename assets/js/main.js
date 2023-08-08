@@ -142,4 +142,29 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
     }
     /*-- women end --*/
 
+    /*-- megaMenu start --*/
+    $(document).ready(function () {
+        var megaMenu = $(".header-section");
+    
+        if (megaMenu.length) {
+            $('.products').hover(function () {
+                $('.mega-menu-section').fadeIn();
+            });
+    
+            $('.mega-menu-section').hover(function () {
+                // No need to handle anything here since you want to keep the menu open
+            });
+    
+            // Hide .mega-menu-section when hovering outside .mega-menu-section and .products
+            $(document).on('mouseover', function (e) {
+                if (!$(e.target).closest('.mega-menu-section').length && !$(e.target).closest('.products').length) {
+                    $('.mega-menu-section').fadeOut();
+                }
+            });
+        }
+    });
+    /*-- megaMenu end --*/
+
+
+
 })(jQuery);

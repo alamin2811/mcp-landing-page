@@ -6,7 +6,7 @@
         top: 0px;
         left: 0px;
         width: 100%;
-        background-color: #ffffff99;
+        background-color: #ffffff;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
         backdrop-filter: blur(10px);
         z-index: 9999;
@@ -28,7 +28,7 @@
 }
 .menu-list{
     margin-left: 23px;
-    width: 460px;
+    width: 550px;
     ul{
         list-style: none;
         padding: 0px;
@@ -42,6 +42,10 @@
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 30px;
+                transition: 0.5s;
+                &:hover{
+                    color: color(primary);
+                }
             }
         }
     }
@@ -95,6 +99,9 @@
 @media only screen and (max-width: 1200px){
     .logo{
         max-width: 160px;
+    }
+    .menu-list{
+        width: 450px;
     }
 }
 @media only screen and (max-width: 991px){

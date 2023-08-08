@@ -28388,7 +28388,7 @@ CSS table of content
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #ffffff;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -28414,7 +28414,7 @@ CSS table of content
 
 .menu-list {
   margin-left: 23px;
-  width: 460px;
+  width: 550px;
 }
 .menu-list ul {
   list-style: none;
@@ -28429,6 +28429,10 @@ CSS table of content
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  transition: 0.5s;
+}
+.menu-list ul li a:hover {
+  color: #35B7F3;
 }
 
 .header-right ul {
@@ -28473,6 +28477,9 @@ CSS table of content
 @media only screen and (max-width: 1200px) {
   .logo {
     max-width: 160px;
+  }
+  .menu-list {
+    width: 450px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -28661,6 +28668,96 @@ CSS table of content
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
+  }
+}
+.mega-menu-section {
+  width: 100vw;
+  overflow-x: hidden;
+  overflow: hidden;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  z-index: 9999;
+  display: none;
+  padding-top: 35px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.megha-menu {
+  width: 100vW;
+  background: #FFFFFF;
+  border-top: 1px solid #ECECEC;
+}
+.megha-menu .p-0 {
+  padding: 0px !important;
+}
+
+.mega-menu-list {
+  min-height: 100%;
+  height: 460px;
+  padding: 45px 0px;
+}
+.mega-menu-list-inner {
+  border-right: 1px solid #ECECEC;
+  min-height: 100%;
+  padding: 0px 32px;
+}
+.mega-menu-list-inner.no-border {
+  border: none !important;
+}
+.mega-menu-list.last {
+  background: #EFF4F8;
+}
+.mega-menu-list h5 {
+  text-transform: uppercase;
+  color: #111;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.mega-menu-list h5 img {
+  width: 20px;
+  margin-right: 16px;
+}
+.mega-menu-list ul {
+  list-style: none;
+  padding: 0px 0px 0px 40px;
+  margin: 0px;
+}
+.mega-menu-list ul li {
+  margin-bottom: 10px;
+}
+.mega-menu-list ul li a {
+  color: #444;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  transition: 0.3s;
+}
+.mega-menu-list ul li a:hover {
+  color: #35B7F3;
+}
+.mega-menu-list ul li button {
+  background: #DBF1FC;
+  max-width: 180px;
+  width: 100%;
+  padding: 10px;
+  transition: 0.6s;
+  color: #35B7F3;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.mega-menu-list ul li button:hover {
+  color: #FFFFFF;
+  background: #35B7F3;
+}
+
+@media only screen and (max-width: 1200px) {
+  .mega-menu-list-inner {
+    padding: 0px 24px;
   }
 }
 /*--------------------------------
