@@ -28413,8 +28413,8 @@ CSS table of content
 }
 
 .menu-list {
-  margin-left: 23px;
-  width: 550px;
+  margin-left: 0px;
+  width: 620px;
 }
 .menu-list ul {
   list-style: none;
@@ -28433,6 +28433,15 @@ CSS table of content
 }
 .menu-list ul li a:hover {
   color: #35B7F3;
+}
+.menu-list ul li a.has-submenu {
+  position: relative;
+}
+.menu-list ul li a.has-submenu::after {
+  content: url(../images/icons/dropdown-toggle.svg);
+  position: absolute;
+  right: -25px;
+  top: -5px;
 }
 
 .header-right ul {
@@ -28480,6 +28489,16 @@ CSS table of content
   }
   .menu-list {
     width: 450px;
+    margin-left: 20px;
+  }
+  .menu-list ul li a {
+    font-size: 14px;
+  }
+  .menu-list ul li a.has-submenu::after {
+    right: -20px;
+  }
+  .header-right ul li a.register, .header-right ul li a.login {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 991px) {
