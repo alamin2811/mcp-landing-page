@@ -28437,7 +28437,7 @@ CSS table of content
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5843137255);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -29287,7 +29287,7 @@ CSS table of content
 }
 .advance-text ul li {
   margin-bottom: 16px;
-  padding-left: 12px;
+  padding-left: 8px;
 }
 .advance-text ul li a {
   color: #2B216A;
