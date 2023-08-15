@@ -29700,6 +29700,7 @@ CSS table of content
   border-radius: 20px;
   max-width: 300px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 991px) {
@@ -29882,10 +29883,10 @@ Footer-style Style
 .subscribe-sec {
   display: inline-block;
   width: 100%;
-  padding-bottom: 102px;
+  padding-bottom: 124px;
   position: relative;
   background: #35b7f3;
-  padding-top: 172px;
+  padding-top: 150px;
 }
 .subscribe-sec.subscribe-sec::before {
   content: "";
