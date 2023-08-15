@@ -25,25 +25,80 @@
 
 <body>
     <!-- Header Section Start -->
+    <div class="search-section">
+        <div class="container">
+            <form action="/">
+                <button class="search-icon"><img src="./assets/images/icons/search-icon.svg" alt="icon"></button>
+                <input type="text" placeholder="Search">
+                <button class="search-close"><span class="iconify" data-icon="material-symbols:close-rounded"></span></button>
+            </form>
+        </div>
+    </div>
     <section class="header-section">
         <div class="container">
             <div class="header-inner">
                 <div class="header-left">
                     <a href="index.html" class="logo"><img src="./assets/images/logo/logo.png" alt="logo"></a>
                     <div class="menu-list">
-                        <ul>
+                        <ul class="main-menu">
                             <li><a class="products has-submenu" href="#">Products</a></li>
                             <li><a href="#">Domains</a></li>
                             <li><a href="#">Marketplace</a></li>
-                            <li><a href="#">Free Tools</a></li>
+                            <li>
+                                <a href="#" class="has-submenu">Free Tools</a>
+                                <ul class="submenu-list">
+                                    <li><a href="#">SSL Checker</a></li>
+                                    <li><a href="#">SSL Mix Content Checker</a></li>
+                                    <li><a href="#" class="has-submenu">Network Tools</a>
+                                        <ul class="submenu-submenu-list">
+                                            <li class="dropdown"><a href="#" title="What’s My IP Address">What’s My IP Address</a></li>
+                                            <li class="dropdown"><a href="#" title="">Traceroute</a></li>
+                                            <li class="dropdown"><a href="#" title="Whois Lookup">Whois Lookup</a></li>
+                                            <li class="dropdown"><a href="#" title="A Record Checker">A Record Checker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="has-submenu">Password Tools</a>
+                                        <ul class="submenu-submenu-list">
+                                            <li class="dropdown"><a href="#" title="Password Generator">Password Generator</a></li>
+                                            <li class="dropdown"><a href="#" title="MD5 Hash Generator">MD5 Hash Generator</a></li>
+                                            <li class="dropdown"><a href="#" title="Base64 Converter">Base64 Converter</a></li>
+                                            <li class="dropdown"><a href="#" title="SHA-1 Hash Generator">SHA-1 Hash Generator</a></li>
+                                            <li class="dropdown"><a href="#" title="SHA-256 Hash Generator">SHA-256 Hash Generator</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="has-submenu">SEO Tools</a>
+                                        <ul class="submenu-submenu-list">
+                                            <li class="dropdown"><a href="#" target="_self" title="">Website Seo Score Checker</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="">SEO Score Checker</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="">Backlink Checker</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="">Broken Links Checker tool</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="">Backlinking Checker</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="">Meta Tag Generator</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="has-submenu">Developer Tools</a>
+                                        <ul class="submenu-submenu-list">
+                                            <li class="dropdown"><a href="#" target="_self" title="WordPress Theme Detector">WordPress Theme Detector</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="Htaccess Redirect Generator">Htaccess Redirect Generator</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="XML Sitemap Generator">XML Sitemap Generator</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="Robot .txt Generator">Robot .txt Generator</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="Website Page Size Checker">Website Page Size Checker</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="Word Counter">Word Counter</a></li>
+                                            <li class="dropdown"><a href="#" target="_self" title="QR Code Generator">QR Code Generator</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a href="#">Support</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="header-right">
                     <ul>
-                        <li><a href="#" class="register">Register</a></li>
+                        <li><a href="#" class="search-open"><img src="./assets/images/icons/search-icon.svg" alt="icon"></a></li>
+                        <li><a href="#" class="cart-btn"><img src="./assets/images/icons/cart.png" alt="icon"></a></li>
                         <li><a href="#" class="login">Login</a></li>
+                        <li><a href="#" class="register">Get Started</a></li>
                         <li>
                             <div class="language-dropdown">
                                 <button type="button" class="toggler">
@@ -54,49 +109,13 @@
                                         <li>
                                             <a href="#" class="list-item">
                                                 <span class="select">EN</span>
-                                                <span>English (US)</span>
+                                                <span>English</span>
                                             </a>
                                         </li>
+                                        
                                         <li>
                                             <a href="#" class="list-item">
-                                                <span class="select">EN</span>
-                                                <span>English (UK)</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="list-item">
-                                                <span class="select">ES</span>
-                                                <span>Español</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="list-item">
-                                                <span class="select">FR</span>
-                                                <span>Français</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="list-item">
-                                                <span class="select">Tü</span>
-                                                <span>Türkçe</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="list-item">
-                                                <span class="select">简体</span>
-                                                <span>简体中文</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="list-item">
-                                                <span class="select">ITA</span>
-                                                <span>Italiano</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="list-item">
-                                                <span class="select">العر</span>
-                                                <span>العربية</span>
+                                                <span>Hebrew (Soon)</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -108,64 +127,6 @@
 
                 <!-- for-mobile -->
                 <div class="for-mobile">
-                    <!-- mobile-language-dropdown -->
-                    <div class="language-dropdown mobile-language-dropdown">
-                        <button type="button" class="toggler">
-                            <img src="./assets/images/icons/global-gray.svg" alt="icon" />
-                        </button>
-                        <div class="language-dropdown-box">
-                            <ul class="list">
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">EN</span>
-                                        <span>English (US)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">EN</span>
-                                        <span>English (UK)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">ES</span>
-                                        <span>Español</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">FR</span>
-                                        <span>Français</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">Tü</span>
-                                        <span>Türkçe</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">简体</span>
-                                        <span>简体中文</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">ITA</span>
-                                        <span>Italiano</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="list-item">
-                                        <span class="select">العر</span>
-                                        <span>العربية</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                     <!-- mobile menu -->
                     <div class="mobile-menu">
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -176,14 +137,43 @@
                         <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
-                                <a href="./index.html" class="logo btn-close" data-bs-dismiss="offcanvas"
+                                <a href="./index.html" class="logo" data-bs-dismiss="offcanvas"
                                     aria-label="Close"><img src="./assets/images/logo/logo.png" alt="logo"></a>
+                                <!-- mobile-language-dropdown -->
+                                <div class="mobile-menu-top">
+                                    <a href="#" class="cart-btn"><img src="./assets/images/icons/cart.png" alt="icon"></a>
+                                    <div class="language-dropdown mobile-language-dropdown">
+                                        <button type="button" class="toggler">
+                                            <img src="./assets/images/icons/global-gray.svg" alt="icon" />
+                                        </button>
+                                        <div class="language-dropdown-box">
+                                            <ul class="list">
+                                                <li>
+                                                    <a href="#" class="list-item">
+                                                        <span class="select">EN</span>
+                                                        <span>English</span>
+                                                    </a>
+                                                </li>
+                                                
+                                                <li>
+                                                    <a href="#" class="list-item">
+                                                        <span>Hebrew (Soon)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"><span class="iconify"
                                         data-icon="material-symbols:close-rounded"></span></button>
                             </div>
                             <div class="offcanvas-body">
                                 <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <form action="/">
+                                        <button><img src="./assets/images/icons/search-icon.svg" alt="icon"></button>
+                                        <input type="text" placeholder="search">
+                                    </form>
                                     <ul class="mobile-menu-list">
                                         <li>
                                             <a class="accordion-button mobile-menu-accordion-btn collapsed" data-bs-toggle="collapse" href="#productsAccordion">
@@ -266,6 +256,8 @@
                                             <div class="accordion-collapse collapse" id="freeToolAccordion">
                                                 <div class="accordion-body mobile-accordion-body">
                                                     <ul class="mobile-menu-list mobile-menu-accordion-list">
+                                                        <li><a href="#">SSL Checker</a></li>
+                                                        <li><a href="#">SSL Mix Content Checker</a></li>
                                                         <li class="accordion-item">
                                                             <a class="accordion-button mobile-menu-accordion-btn collapsed" data-bs-toggle="collapse" href="#networkToolsAccordion">
                                                                 Network Tools
@@ -415,7 +407,6 @@
     <!-- mega menu End -->    
 
     <!-- Header Section End -->
-    
 
     <!-- hero section start -->
     <section class="hero-section uig-pt-130 uig-pb-132 uig-md-pt-100 uig-md-pb-100 uig-sm-pt-70 uig-sm-pb-75">
@@ -1095,20 +1086,6 @@
 
 
 
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
     <!-- All javascript files included here -->
     <!-- jQuery v3.6.1 js -->
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
@@ -1120,6 +1097,15 @@
     <script src="./assets/js/iconify.min.js"></script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
+
+    <script>
+        $('.search-open').click(function () {
+            $('.search-section').fadeToggle();
+        });
+        $('.search-close').click(function () {
+            $('.search-section').fadeOut();
+        });
+    </script>
 
 </body>
 

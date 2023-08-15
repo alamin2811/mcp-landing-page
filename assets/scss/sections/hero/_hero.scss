@@ -21,7 +21,7 @@
             content: '';
             background: rgba(255, 255, 255, 0.30);
             height: 5px;
-            width: 70%;
+            width: 80%;
             position: absolute;
             bottom: -12px;
             left: 0;
@@ -137,9 +137,10 @@
             &::after{
                 left: auto;
                 right: auto;
+                width: 70%;
             }
         }
-        button{
+        .banner-btn{
             margin: auto;
         }
     }
